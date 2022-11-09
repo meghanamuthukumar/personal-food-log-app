@@ -1,5 +1,5 @@
 import React from 'react'
-import AllCameras from '../AllCameras/AllCameras'
+import UploadImageToS3WithReactS3 from '../UploadImageS3/UploadImageToS3WithReactS3'
 import Camera from '../Camera/Camera'
 
 export default function uploadImage() {
@@ -7,13 +7,10 @@ export default function uploadImage() {
     <div>
       Upload your meal image here - 
 
-      <br/>
-      <input type="file" accept="image/x-png,image/jpeg,image/gif"/>
-
       <br />
-      All Cameras - 
       {/* <AllCameras /> */}
-      <Camera />
+      {/*<Camera />*/}
+      <UploadImageToS3WithReactS3 />
     </div>
   )
 }
