@@ -1,5 +1,6 @@
 import React ,{useState} from 'react';
 import AWS from 'aws-sdk'
+// import { Camera } from '../Camera/Camera.js'
 
 const S3_BUCKET ='sepmstorage';
 const REGION ='ca-central-1';

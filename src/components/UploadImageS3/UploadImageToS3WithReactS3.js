@@ -1,5 +1,6 @@
 import React , {useState} from 'react';
 import { uploadFile } from 'react-s3';
+import {Camera} from '../Camera/Camera'
 window.Buffer = window.Buffer || require("buffer").Buffer;
 
 
@@ -30,6 +31,9 @@ const UploadImageToS3WithReactS3 = () => {
     }
 
     return <div>
+        <p>Capture an image</p>
+        {/* <Camera /> */}
+        <p>or</p>
         <div>Choose file</div>
         <input type="file" onChange={handleFileInput}/>
         <button onClick={() => handleUpload(selectedFile)}> Upload to S3</button>
